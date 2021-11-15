@@ -9,8 +9,8 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="activity_1">activity 1</string>
-    <string name="activity_about">activity about</string>
+    <string name="activity_main">activity 1</string>
+    <string name="title_about">activity about</string>
     <string name="to_second">to second</string>
     <string name="activity_2">activity 2</string>
     <string name="to_first">to first</string>

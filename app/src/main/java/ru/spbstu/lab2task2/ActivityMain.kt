@@ -4,19 +4,19 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import ru.spbstu.lab2task2.databinding.Activity1Binding
+import ru.spbstu.lab2task2.databinding.ActivityMainBinding
 import android.view.Menu
 
 
-class Activity1 : AppCompatActivity() {
+class ActivityMain : AppCompatActivity() {
 
-    private lateinit var binding: Activity1Binding
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = Activity1Binding.inflate(layoutInflater)
-
-        binding.toSecond.setOnClickListener {
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(R.layout.activity_main)
+        binding.bnToSecond.setOnClickListener {
             startActivity(
                 Intent(
                     this,
@@ -36,7 +36,7 @@ class Activity1 : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.activity_about -> {
+            R.id.menu_about -> {
                 startActivity(Intent(this, ActivityAbout::class.java))
                 true
             }

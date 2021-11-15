@@ -1,10 +1,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="ru.spbstu.lab2task2.MainActivity">
+    tools:context="ru.spbstu.lab2task2.ActivityMain">
     <item
-        android:id="@+id/activity_about"
+        android:id="@+id/menu_about"
         android:orderInCategory="100"
-        android:title="@string/activity_about"
-        app:showAsAction="never" />
+        android:title="@string/title_about"
+        app:showAsAction="never"
+        />
 </menu>

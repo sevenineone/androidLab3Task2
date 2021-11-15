@@ -5,15 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".Activity1">
+    tools:context=".ActivityMain"
+    android:id="@+id/fragment1">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvAbout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#3F51B5"
         android:textColor="@color/white"
-        android:text="@string/activity_1"
+        android:text="@string/activity_main"
         android:textSize="30sp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/toSecond"
+        android:id="@+id/bnToSecond"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/to_second"
@@ -30,7 +31,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAbout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

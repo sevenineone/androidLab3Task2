@@ -10,9 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab2Task2">
         <activity
-            android:name=".Activity1"
+            android:name=".ActivityMain"
             android:exported="true"
-            android:label="Activity 1">
+            android:label="mainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

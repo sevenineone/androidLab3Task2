@@ -16,10 +16,10 @@ class Activity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = Activity2Binding.inflate(layoutInflater)
-        binding.toFirst.setOnClickListener {
+        binding.bnToFirst.setOnClickListener {
             finish()
         }
-        binding.toThird.setOnClickListener {
+        binding.bnToThird.setOnClickListener {
             startActivityForResult(
                 Intent(
                     this,
@@ -46,7 +46,7 @@ class Activity2 : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.activity_about -> {
+            R.id.menu_about -> {
                 startActivity(Intent(this, ActivityAbout::class.java))
                 true
             }

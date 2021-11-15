@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".Activity2">
+    tools:context=".Activity2"
+    android:id="@+id/fragment2">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvAbout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#3F51B5"
@@ -21,19 +22,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/toFirst"
+        android:id="@+id/bnToFirst"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:text="@string/to_first"
-        app:layout_constraintBottom_toTopOf="@+id/toThird"
+        app:layout_constraintBottom_toTopOf="@+id/bnToThird"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAbout" />
 
     <Button
-        android:id="@+id/toThird"
+        android:id="@+id/bnToThird"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
@@ -42,7 +43,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toFirst" />
+        app:layout_constraintTop_toBottomOf="@+id/bnToFirst" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

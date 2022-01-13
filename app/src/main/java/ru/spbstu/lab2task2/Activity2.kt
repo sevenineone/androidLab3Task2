@@ -28,12 +28,18 @@ class Activity2 : AppCompatActivity() {
             )
         }
         setContentView(binding.root)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         super.onCreateOptionsMenu(menu)
         val inflater = menuInflater
         inflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
         return true
     }
 
